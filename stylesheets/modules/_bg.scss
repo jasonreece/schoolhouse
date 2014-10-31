@@ -1,0 +1,117 @@
+// -------------------------------------
+// - Bg Module
+// -------------------------------------
+// ----- Styles for the Bg Module
+// -------------------------------------
+
+// -------------------------------------
+//   Header
+// -------------------------------------
+
+.bg-logo-text {
+  @extend %ir;
+  height: 0;
+}
+
+// -------------------------------------
+//   Main-Content
+// -------------------------------------
+
+//     Hero Image
+// -------------------------------------
+
+$menu-list: "home", "home2", "home3", "home4", "home5",
+            "food", "food2", "food3", "food4", "food5",
+            "drinks", "drinks2", "drinks3", "drinks4", "drinks5",
+            "contact";
+
+@each $menu-item in $menu-list {
+  .bg-hero-#{$menu-item} {
+    @include background-image-helper("../img/320/hero-#{$menu-item}.jpg");
+    @include breakpoint(321px) {
+      @include background-image-helper("../img/480/hero-#{$menu-item}.jpg");
+    }
+    @include breakpoint(481px) {
+      @include background-image-helper("../img/768/hero-#{$menu-item}.jpg");
+    }
+    @include breakpoint(769px) {
+      @include background-image-helper("../img/1024/hero-#{$menu-item}.jpg");
+    }
+    @include breakpoint(1025px) {
+      @include background-image-helper("../img/1280/hero-#{$menu-item}.jpg");
+    }
+    @include breakpoint(1281px) {
+      padding-bottom: 689.4375px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  }
+}
+
+.bg-hero-contact-info {
+  background: url('../img/school-house-contact-info-sml.png') no-repeat center 30px;
+  @include breakpoint(480px) {
+    background: url('../img/school-house-contact-info-lrg.png') no-repeat center 45px;
+  }
+  @include breakpoint(768px) {
+    background-position: center 70px;
+  }
+}
+
+.bg-contact-yellow-circle {
+  border: 5px solid $color-yellow;
+  border-radius: 50%;
+  height: 112px;
+  margin: 30px auto 15px;
+  width: 112px; 
+}
+
+.bg-contact-map {
+  @include breakpoint(1024px) {
+    @include responsive-width-helper(430, 914);
+    float: right;
+    margin-top: 46px;
+  }
+  @include breakpoint(1280px) {
+    @include responsive-width-helper(484, 1171);
+    margin-right: 85px;
+  }
+}
+
+.bg-contact-disc {
+  background: $color-red-gray;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  width: 40px;
+  @include breakpoint(480px) {
+    float: left;
+    margin: 0 10px 0 0; 
+  }
+}
+
+// -------------------------------------
+//   Footer
+// -------------------------------------
+
+.bg-footer {
+  background: url('../img/bg-footer.jpg') center center;
+  margin-top: 75px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bg-social-disc {
+  background: #a19e9d;
+  border-radius: 50%;
+  float: left;
+  height: 45px;
+  width: 45px;
+  &:hover {
+    background: #eee;
+  }
+}

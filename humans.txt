@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Verenice Lopez> -- <Design> -- <http://cargocollective.com/verenicelopez>
+
+    <Jason Reece> -- <WebDev> -- <jasonreece.com>
+
+# THANKS
+
+    <You>

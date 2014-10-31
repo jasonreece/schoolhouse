@@ -1,0 +1,1 @@
+var animateDiv=function(){$(".js-hero-thank-you").animate({opacity:0,zIndex:-1},1e3,function(){})},animateCarousel=function(){$(".carousel")&&$(".carousel").carousel({interval:7500,pause:!1})};$(document).ready(function(){animateDiv();animateCarousel()});

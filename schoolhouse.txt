@@ -1,0 +1,113 @@
+
+
+               _                       _   _                                  
+  ___    ___  | |__     ___     ___   | | | |__     ___    _   _   ___    ___ 
+ / __|  / __| | '_ \   / _ \   / _ \  | | | '_ \   / _ \  | | | | / __|  / _ \
+ \__ \ | (__  | | | | | (_) | | (_) | | | | | | | | (_) | | |_| | \__ \ |  __/
+ |___/  \___| |_| |_|  \___/   \___/  |_| |_| |_|  \___/   \__,_| |___/  \___|
+                                                                              
+
+
+To edit the events on the Contact page.
+
+You will need:
+
+Transmit: An application that will open up access to the files on the web server.
+http://panic.com/transmit/
+
+Sublime Text 2 - A text editor to edit the code.
+http://www.sublimetext.com/2
+
+For the first time setup:
+
+Open transmit.  
+Choose the Favorites Tab.
+Click the plus sign at the bottom to create a new favorite site.
+Enter the Server, User Name, and Password info
+Click the save button.
+
+Double click the newly created favorite.
+
+The server should connect, and display the files on the server.
+
+Now you'll need to find the events.php file.
+
+Double click the events.php file to open it in Sublime Text 2.
+
+Only edit the actual text that you want to change.
+
+Clicking save in this file, will make changes on the live site.
+
+Do not edit any of the <html> tags or class="" attributes.
+
+If for any reason, you break anything on this page, you can download the original code here:
+
+https://raw.github.com/jasonreece/schoolhouse-site/master/events.php
+
+Just paste this back into the events.php file, and start over.
+
+
+
+I'll also include the code here:
+
+<ul class="list-contact-event">
+  <li>
+    <div class="bg-contact-yellow-circle">
+      <h3 class="t-contact-event-date">4<span class="t-contact-event-date-sml">th</span></h3>
+      <h3 class="t-contact-event-month">NOVEMBER</h3>
+    </div>
+    <header>
+      <h2 class="t-contact-event-heading">LOREM IPSUM DOLOR</h2>
+    </header>
+    <p>Lorem ipsum dolro sit, amet  elitemer consecteture adispicingquie posuer.</p>
+  </li>
+  
+  <li>
+    <div class="bg-contact-yellow-circle">
+      <h3 class="t-contact-event-date">21<span class="t-contact-event-date-sml">st</span></h3>
+      <h3 class="t-contact-event-month">NOVEMBER</h3>
+    </div>
+    <header>
+      <h2 class="t-contact-event-heading">OMNIA QUARTE ESSENCE</h2>
+    </header>
+    <p>Nullam vel neque ultrices, eleifend dolor ut, fermentum arcu.</p>
+  </li>
+  
+  <li>
+    <div class="bg-contact-yellow-circle">
+      <h3 class="t-contact-event-date">8<span class="t-contact-event-date-sml">th</span></h3>
+      <h3 class="t-contact-event-month">DECEMBER</h3>
+    </div>
+    <header>
+      <h2 class="t-contact-event-heading">CAPRIA DOLCE SONORUM</h2>
+    </header>
+    <p>Suspendisse eget diam facilisis, semper massa quis, adipiscing odio.</p>
+  </li>
+  
+  <li>
+    <div class="bg-contact-yellow-circle">
+      <h3 class="t-contact-event-date">11<span class="t-contact-event-date-sml">th</span></h3>
+      <h3 class="t-contact-event-month">DECEMBER</h3>
+    </div>
+    <header>
+      <h2 class="t-contact-event-heading">QUINESTRA FORTIR LOBOTIRS</h2>
+    </header>
+    <p>Aenean lobortis velit velit, et cursus urna ornare at.</p>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,282 @@
+// -------------------------------------
+//
+//   Layout -
+//   Margin, Padding, Sizing
+//
+// -------------------------------------
+
+.l-grid-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+// -------------------------------------
+//   Header
+// -------------------------------------
+
+.l-top-nav {
+  @extend %clearfix;
+  position: relative;
+  background: #2f231b;
+  float: left;
+  opacity: 0.9;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%; 
+  z-index: 1;
+}
+
+.l-logo-container {
+  @extend %clearfix;
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  @include breakpoint(768px) {
+    float: left;
+    padding-top: 5px;
+    width: 330px;
+  }
+}
+
+.l-logo {
+  display: block;
+  margin: 0 auto;
+  width: 290px;
+  &:hover,
+  &:focus {
+  opacity: 0.6;
+  }
+  @include breakpoint(768px) {
+    width: 100%; 
+  }
+}
+
+// -------------------------------------
+//   Main-Content
+// -------------------------------------
+.l-container {
+  @extend %clearfix;
+  margin: 0 auto;
+  padding: 0 15px; 
+  @include breakpoint(480px) {
+    padding-left: 30px;
+    padding-right: 30px; 
+  }
+  @include breakpoint(768px) {
+    padding-left: 20px; 
+    padding-right: 20px;
+  }
+  @include breakpoint(1024px) {
+    padding-left: 55px;
+    padding-right: 55px; 
+  }
+}
+
+//     Hero Contact Info
+// -------------------------------------
+
+.l-hero-container {
+  position: relative;
+  max-height: 657px;
+  min-height: 590px;
+  @include breakpoint(321px) {
+    min-height: 657px;
+  }
+  @include breakpoint(481px) {
+    max-height: 689px;
+    min-height: 650px;
+  }
+}
+
+.l-hero-contact-info {
+  @extend %clearfix;
+  position: absolute;
+  top: 200px;
+  float: left;
+  padding-top: 265px;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  @include breakpoint(480px) {
+    top: 110px;
+    padding-top: 305px;
+  }
+  @include breakpoint(768px) {
+    top: 65px;
+    padding-top: 335px;
+    width: 410px;
+  }
+  @include breakpoint(1024px) {
+    width: 440px;
+  }
+}
+
+.l-hero-header {
+  display: none;
+  @include breakpoint(768px) {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: block;
+    padding-top: 60px;
+  }
+  @include breakpoint(1024px) {
+    bottom: 17px;
+    right: 55px; 
+  }
+}
+
+//     Hero Overlay
+// -------------------------------------
+
+.l-hero-overlay {
+  @extend %clearfix;
+  position: absolute;
+  top: 202px;
+  bottom: 0;
+  background-color: #000;
+  float: left;
+  opacity: 0.5;
+  width: 100%;
+  @include breakpoint(480px) {
+    top: 110px; 
+  }
+  @include breakpoint(768px) {
+    top: 65px;
+    width: 410px;
+  }
+  @include breakpoint(1024px) {
+    width: 440px;
+  }
+}
+
+.l-hero-thank-you {
+  @extend %clearfix;
+  @include transition-property(opacity,z-index);
+  @include transition-duration(2s);
+  @include transition-timing-function(ease-in);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #f4f4f4;
+  border-top: 1px solid #eae8e8;
+  border-bottom: 1px solid #eae8e8;
+  float: left;
+  opacity: 1.0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.l-hero-thank-you-inner {
+  border: 8px solid $color-brown;
+  margin: 17px 10px;
+  @include breakpoint(1280px) {
+  margin: 17px; 
+  }
+}
+
+.l-menu-divider {
+  background: $color-brown;
+  height: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+.l-special-container {
+  @extend %clearfix;
+  @include breakpoint(480px) {
+    margin: 0 auto;
+    max-width: 420px;
+  }
+  @include breakpoint(768px) {
+    max-width: 728px; 
+  }
+  @include breakpoint(1024px) {
+    max-width: 914px; 
+  }
+  @include breakpoint(1280px) {
+    max-width: 1171px; 
+  }
+}
+
+.l-special-center {
+  @extend %clearfix;
+  @include breakpoint(1024px) {
+    max-width: 422px;
+    margin: 0 auto; 
+  }
+  @include breakpoint(1280px) {
+    float: left;
+    width: auto;
+  }
+}
+
+.l-special {
+  position: relative;
+  float: left;
+  margin: 30px auto 0;
+  min-height: 160px;
+  padding-top: 40px;
+  text-align: center;
+  width: 50%;
+  &:nth-child(2n) {
+    float: right; 
+  }
+  @include breakpoint(480px) {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 40px;
+    min-height: 140px;
+    width: 195px;
+  }
+  @include breakpoint(768px) {
+    margin-right: 100px;
+    width: 175px;
+    &:nth-child(2n) {
+      float: left;
+    }
+    &:nth-child(3) {
+      margin-right: 0; 
+    }
+    &:last-child {;
+      margin-right: 0; 
+    }
+  }
+  @include breakpoint(1024px) {
+    margin-right: 70px;
+    &:nth-child(3) {
+      margin-right: 70px; 
+    }
+    &:nth-child(4) {
+      margin-right: 0; 
+    }
+  }
+  @include breakpoint(1280px) {
+    margin-right: 24px; 
+    &:nth-child(3) {
+      margin-right: 24px; 
+    }
+    &:nth-child(4) {
+      margin-right: 24px; 
+    }
+  }
+}
+
+
+
+.l-contact-info-email {
+  @extend %clearfix;
+  display: block;
+  margin: 0 auto;
+  width: 285px;
+}
+
+.l-contact-info-phone {
+  @extend %clearfix;
+  display: block;
+  margin: 0 auto;
+  width: 165px;
+}

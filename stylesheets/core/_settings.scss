@@ -1,0 +1,82 @@
+// -------------------------------------
+//
+//   Settings -
+//   @Font-Face Declarations, Variables
+//
+// -------------------------------------
+
+// -------------------------------------
+//   @font-face
+// -------------------------------------
+
+@font-face {
+  font-family: 'geared-slab';
+  src: url('../fonts/geared/GearedSlab.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/geared/GearedSlab.woff') format('woff'), 
+       url('../fonts/geared/GearedSlab.ttf')  format('truetype'),
+       url('../fonts/geared/GearedSlab.svg#GearedSlab') format('svg');
+}
+
+@font-face {
+  font-family: 'geared-slab-light';
+  src: url('../fonts/geared/GearedSlab-Light.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/geared/GearedSlab-Light.woff') format('woff'), 
+       url('../fonts/geared/GearedSlab-Light.ttf')  format('truetype'),
+       url('../fonts/geared/GearedSlab-Light.svg#GearedSlab-Light') format('svg');
+}
+
+@font-face {
+  font-family: 'geared-slab-bold';
+  src: url('../fonts/geared/GearedSlab-Bold.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/geared/GearedSlab-Bold.woff') format('woff'), 
+       url('../fonts/geared/GearedSlab-Bold.ttf')  format('truetype'),
+       url('../fonts/geared/GearedSlab-Bold.svg#GearedSlab-Bold') format('svg');
+}
+
+@font-face {
+  font-family: 'geared-slab-extra-bold';
+  src: url('../fonts/geared/GearedSlab-Extrabold.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/geared/GearedSlab-Extrabold.woff') format('woff'), 
+       url('../fonts/geared/GearedSlab-Extrabold.ttf')  format('truetype'),
+       url('../fonts/geared/GearedSlab-Extrabold.svg#GearedSlab-Extrabold') format('svg');
+}
+
+@font-face {
+  font-family: 'fran-bold';
+  src: url('../fonts/franchise-bold/Franchise-Bold.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/franchise-bold/Franchise-Bold.woff') format('woff'), 
+       url('../fonts/franchise-bold/Franchise-Bold.ttf')  format('truetype'),
+       url('../fonts/franchise-bold/Franchise-Bold.svg#Franchise-Bold') format('svg');
+}
+
+@font-face {
+  font-family: 'abraham-lincoln';
+  src: url('../fonts/abraham-lincoln/AbrahamLincoln.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/abraham-lincoln/AbrahamLincoln.woff') format('woff'), 
+       url('../fonts/abraham-lincoln/AbrahamLincoln.ttf')  format('truetype'),
+       url('../fonts/abraham-lincoln/AbrahamLincoln.svg#AbrahamLincoln') format('svg');
+}
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Color ----- //
+
+$color-brown: #3a2722;
+$color-link-yellow: #ffd303;
+$color-yellow: #d7aa0a;
+$color-red-gray: #908380;
+
+// ----- Type ----- //
+
+$font-gs: 'geared-slab', sans-serif;
+$font-gs-light: 'geared-slab-light', sans-serif;
+$font-gs-bold: 'geared-slab-bold', sans-serif;
+$font-gs-ex-bold: 'geared-slab-extra-bold', sans-serif;
+
+$font-f-bold: 'fran-bold', sans-serif;
+
+$font-lincoln: 'abraham-lincoln', sans-serif;
+
+$font-helvetica: Helvetica, sans-serif;

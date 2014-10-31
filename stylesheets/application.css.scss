@@ -1,0 +1,44 @@
+// -------------------------------------
+//
+//   Application.css.scss
+//   Contains an import section for libraries, core, and modules, the inbox, and a shame section for quick fixes and hacks
+//
+// -------------------------------------
+
+// -------------------------------------
+//   Libraries
+// -------------------------------------
+
+// ----- Reset - Normalize.css ----- //
+@import "libs/normalize";
+
+// ----- Compass
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "compass/utilities/sprites";
+
+// -------------------------------------
+//   Core
+// -------------------------------------
+
+// ----- Settings - @Font-Face Declarations, Variables ----- //
+@import "core/settings";
+
+// ----- Helpers - Extends, Functions, and Mixins ----- //
+@import "core/helpers";
+
+// ----- Base - Base-level tags (body, p, etc.) ----- //
+@import "core/base";
+
+// ----- Typography - Fonts and Colors ----- //
+@import "core/typography";
+
+// ----- Layout - Margin, Padding, Sizing ----- //
+@import "core/layout";
+
+
+// -------------------------------------
+//   Modules
+// -------------------------------------
+
+@import "modules/modules";

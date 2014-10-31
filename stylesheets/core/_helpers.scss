@@ -1,0 +1,79 @@
+// -------------------------------------
+//
+//   Helpers -
+//   Extends, Functions, and Mixins
+//
+// -------------------------------------
+
+// -------------------------------------
+//   Extends
+// -------------------------------------
+
+%ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+%ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+%clearfix:before,
+%clearfix:after {
+  content: " ";
+  display: table;
+}
+
+%clearfix:after {
+  clear: both;
+}
+
+%clearfix {
+  *zoom: 1;
+}
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+@mixin background-image-helper($url) {
+  $image-padding: percentage(image-height($url) / image-width($url));
+  background: url($url) no-repeat top center;
+  padding-bottom: $image-padding;
+}
+
+@mixin responsive-width-helper($target, $context) {
+  width: percentage($target / $context); 
+}
+
+@mixin breakpoint($width) {
+  @media (min-width: $width) {
+    @content; 
+  }
+}
+
+// -------------------------------------
+//   Utilities
+// -------------------------------------
+
+.u-display-block {
+  display: block; 
+}
+
+.chromeframe {
+  background: #ccc;
+  color: #000;
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+}

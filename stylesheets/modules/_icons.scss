@@ -1,0 +1,52 @@
+// -------------------------------------
+// - Icons Module
+// -------------------------------------
+// ----- Styles for the Icons Module
+// -------------------------------------
+
+//  Compass Icons Set Up
+// -------------------------------------
+
+$icons: sprite-map("icons/*.png");
+
+i {
+  background: $icons;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@each $i in sprite_names($icons) {
+  .icon-#{$i} {
+    background-position: sprite-position($icons, $i);
+    @include sprite-dimensions($icons, $i) 
+  }
+}
+
+//   Icons 
+// -------------------------------------
+
+.icon-special {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.icon-contact-email {
+  position: relative;
+  top: 12px;
+  margin-top: 12px;
+  @include breakpoint(480px) {
+    position: static; 
+  }
+}
+
+.icon-contact-phone {
+  position: relative;
+  top: 8px;
+  margin-top: 8px;
+  @include breakpoint(480px) {
+    position: static; 
+  }
+}

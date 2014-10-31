@@ -1,0 +1,304 @@
+// -------------------------------------
+//
+//   Typography -
+//   Fonts and Colors
+//
+// -------------------------------------
+
+//  Top Navigation
+// -------------------------------------
+
+.t-list-top-nav {
+  display: block;
+  font-family: $font-f-bold;
+  font-size: 3.5rem;
+  &.active {
+    color: #fff; 
+  }
+  @include breakpoint(480px) {
+    line-height: 2.9rem; 
+  }
+}
+
+//  Hero
+// -------------------------------------
+
+.t-hero-phone-number {
+  display: block;
+  font-size: 5.5rem;
+  font-family: $font-gs-light;
+  &:visited {
+    color: $color-link-yellow; 
+  }
+  @include breakpoint(480px) {
+    font-size: 6.5rem; 
+  }
+  @include breakpoint(768px) {
+    font-size: 7.5rem; 
+  }
+}
+
+.t-hero-hours {
+  color: #fff;
+  font-family: $font-gs-bold;
+  font-size: 3.0em;
+  line-height: 4.0rem;
+  @include breakpoint(480px) {
+    font-size: 4.0rem;
+    line-height: 4.8rem; 
+  }
+  @include breakpoint(1024px) {
+    font-size: 3.9rem; 
+  }
+}
+
+.t-hero-header {
+  color: #f1f1f0;
+  font-family: $font-gs;
+  font-size: 12.5rem;
+  @include breakpoint(1024px) {
+    font-size: 15.0rem;
+  }
+}
+
+.t-home-specials-schedule {
+  color: $color-yellow;
+  font-family: $font-f-bold;
+  font-size: 3.0em;
+  text-align: center;
+  @include breakpoint(480px) {
+    letter-spacing: 1.0rem; 
+  }
+}
+
+.t-special-heading {
+  color: $color-red-gray;
+  font-family: $font-gs-bold;
+  font-size: 2.5rem;
+  line-height: 3.0rem;
+  @include breakpoint(480px) {
+  font-size: 3.0rem;
+  line-height: 3.5rem;
+  }
+}
+
+.t-special-sub-heading {
+  color: $color-brown;
+  font-family: $font-f-bold;
+  font-size: 2.0rem;
+  @include breakpoint(480px) {
+  font-size: 2.4rem;
+  }
+}
+
+//   Menu
+// -------------------------------------
+
+.t-menu-price {
+  color: $color-yellow;
+  font-family: $font-gs;
+  font-size: 2.1rem;
+}
+
+.t-menu-price-sml {
+  color: $color-yellow;
+  font-family: $font-gs;
+  font-size: 1.8rem;
+}
+
+//   Bottles
+
+.t-menu-bottles-count {
+  color: $color-red-gray;
+  font-family: $font-gs-bold;
+  font-size: 2.1rem;
+}
+
+.t-menu-bottles-heading {
+  color: $color-brown;
+  font-family: $font-f-bold;
+  font-size: 2.1rem;
+}
+
+//   Bombers
+
+.t-menu-bombers-heading {
+  color: $color-brown;
+  font-family: $font-gs-bold;
+  font-size: 2.1rem;
+}
+
+.t-menu-bombers-volume {
+  color: $color-red-gray;
+  font-family: $font-f-bold;
+  font-size: 2.1rem;
+}
+
+//   Cocktails
+
+.t-menu-cocktails-heading {
+  color: $color-red-gray;
+  font-family: $font-gs-ex-bold;
+  font-size: 2.2rem;
+}
+
+//   Wines
+
+.t-menu-wine-main-heading {
+  color: $color-red-gray;
+  font-family: $font-f-bold;
+  font-size: 3.0rem;
+  margin-top: 30px;
+  text-align: center;
+  @include breakpoint(1280px) {
+    text-align: left; 
+  }
+}
+
+.t-menu-wine-heading {
+  color: $color-brown;
+  font-family: $font-gs-ex-bold;
+  font-size: 2.1rem;
+}
+
+.t-menu-wine-size {
+  color: $color-red-gray;
+  font-family: $font-f-bold;
+  font-size: 2.1rem;
+}
+
+//   Plates
+
+.t-menu-plates-heading {
+  color: $color-red-gray;
+  font-family: $font-gs-ex-bold;
+  font-size: 2.1rem;
+}
+
+.t-menu-plates-addon {
+  color: $color-brown;
+  font-family: $font-f-bold;
+  font-size: 2.1rem;
+  margin-top: 10px;
+}
+
+//   Burgers
+
+.t-menu-burgers-heading {
+  color: $color-brown;
+  font-family: $font-f-bold;
+  font-size: 2.4rem;
+}
+
+.t-menu-burgers-addon {
+  color: $color-brown;
+  font-family: $font-gs-bold;
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+.t-menu-sides-heading {
+  color: $color-red-gray;
+  font-family: $font-f-bold;
+  font-size: 2.1rem;
+  margin-top: 25px;
+  text-align: center;
+  @include breakpoint(480px) {
+    font-size: 2.4rem; 
+  }
+}
+
+.t-menu-disclaimer {
+  color: $color-red-gray;
+  font-family: $font-gs-light;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+//   Contact Event
+// -------------------------------------
+
+.t-contact-event-date {
+  color: $color-brown;
+  font-family: $font-gs-ex-bold;
+  font-size: 5.5rem;
+  line-height: 3.0rem;
+  margin-top: 33px;
+}
+
+.t-contact-event-date-sml {
+  font-size: 4.0rem; 
+}
+
+.t-contact-event-month {
+  color: $color-brown;
+  font-family: $font-f-bold;
+  font-size: 2.0rem;
+}
+
+.t-contact-event-heading {
+  color: $color-brown;
+  font-family: $font-f-bold;
+  font-size: 2.4rem;
+}
+
+//   Contact Us
+// -------------------------------------
+
+.t-required {
+  color: $color-yellow; 
+}
+
+.t-contact-info-heading {
+  color: $color-red-gray;
+  font-family: $font-f-bold;
+  font-size: 2.6rem;
+  margin-top: 8px;
+  text-align: center;
+  @include breakpoint(480px) {
+    float: left;
+    text-align: left;
+  }
+}
+
+.t-hero-thank-you-heading {
+  color: $color-yellow;
+  font-family: $font-gs-ex-bold;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  padding: 205px 10px;
+  text-align: center;
+  @include breakpoint(480px) {
+    font-size: 7.0rem;
+    line-height: 7.0rem;
+  }
+  @include breakpoint(768px) {
+    font-size: 11.0rem;
+    line-height: 11.0rem;
+    padding-top: 165px;
+    padding-bottom: 165px;
+  }
+  @include breakpoint(1024px) {
+    padding: 185px 50px;
+  }
+  @include breakpoint(1025px) {
+    padding-bottom: 165px;
+    padding-top: 165px;
+  }
+  @include breakpoint(1280px) {
+    padding-bottom: 185px;  
+    padding-top: 185px;
+  }
+}
+
+//   Text Utilities
+// -------------------------------------
+
+.t-gs-light {
+  font-family: $font-gs-light;  
+}
+
+.t-lincoln {
+  font-family: $font-lincoln; 
+}

@@ -1,0 +1,138 @@
+// -------------------------------------
+//
+//   Base -
+//   Base-level tags (body, p, etc.)
+//
+// -------------------------------------
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #eee; 
+}
+
+main {
+  display: block; 
+}
+
+ul {
+  margin: 0;
+  padding: 0; 
+  li {
+    list-style: none; 
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; 
+}
+
+h1 {
+  color: $color-brown;
+  font-family: $font-gs-bold;
+  font-size: 5.0rem;
+  line-height: 4.5rem;
+  text-align: center;
+  margin-top: 45px;
+}
+
+a {
+  color: $color-link-yellow;
+  text-decoration: none;
+  &:visited {
+    color: $color-link-yellow; 
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff; 
+  }
+}
+
+p {
+  color: $color-brown;
+  font-family: $font-helvetica;
+  font-size: 1.4rem;
+}
+
+hr {
+  background: #fff;
+  height: 5px;
+  margin: 10px 0 20px;
+  @include breakpoint(480px) {
+    height: 6px;
+    margin-bottom: 25px;
+  }
+}
+
+form {
+  margin-top: 30px;
+  @include breakpoint(1024px) {
+    @include responsive-width-helper(430, 914);
+    float: left;
+  }
+  @include breakpoint(1280px) {
+    @include responsive-width-helper(430, 1171);
+    margin-left: 85px;
+  }
+}
+
+label,
+input,
+textarea {
+  display: block; 
+  max-width: 100%;
+  min-width: 100%;
+}
+
+label {
+  color: $color-brown;
+  font-family: $font-f-bold;
+  font-size: 2.4rem;
+}
+
+input,
+textarea {
+  border: 1px solid $color-red-gray;
+  border-radius: 5px;
+  color: $color-brown;
+  font-family: $font-f-bold;
+  font-size: 2.4em;
+  line-height: 2.4rem;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+input {
+  padding: 2.5px 10px; 
+}
+
+textarea {
+  padding: 5px 10px 55px; 
+}
+
+input[type="submit"] {
+  background: $color-link-yellow;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: $font-f-bold;
+  font-size: 2.4rem;
+  padding: 10px 25px 5px;
+  max-width: 150px;
+  min-width: 150px;
+}
